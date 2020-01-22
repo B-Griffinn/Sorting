@@ -1,10 +1,12 @@
 # TO-DO: Complete the selection_sort() function below 
 def selection_sort( arr ):
-    for i in range(0, len(arr) - 1):
+    
+    for i in range(0, len(arr) - 1): # loop thru entire arr length -1 beginning at index 0
+
         # store current index on a var
         cur_index = i
         # track smallest index
-        smallest_index = cur_index
+        smallest_index = cur_index # first element is always sorted on first loop, rest of collection is unsorted
 
         # TO-DO: find next smallest element
         # (hint, can do in 3 loc)
