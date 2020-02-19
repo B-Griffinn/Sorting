@@ -30,23 +30,29 @@ print(selection_sort(my_arr))
 def bubble_sort( arr ):
 
     for i in range(len(arr) - 1, 0, -1):
+        # print(i)
 
         for j in range(i):
 
             if arr[j] > arr[j + 1]:
-
-                temp = arr[j]
-                arr[j] = arr[j + 1]
-                arr[j + 1] = temp
+                # SWAP
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
     return arr
 
 bub_arr = [2, 1, 3, 7, 9]
-# arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
-# # arr2 = []
-# # arr3 = [0, 1, 2, 3, 4, 5]
 print(bubble_sort(bub_arr))
 
+
+
+
+
+
+
+
+# STRETCH: implement the Count Sort function below
+def count_sort( arr, maximum=-1 ):
+    pass
 
 #############################
 # ## INSERTION SORT
